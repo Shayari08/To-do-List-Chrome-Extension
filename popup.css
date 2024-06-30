@@ -1,0 +1,78 @@
+body {
+  width: 250px;
+  height: 400px;
+  font-size: 16px;
+  overflow: hidden; /* Prevent content from overflowing rounded corners */
+  background-color: #222831; /* Change background color to black */
+  color: #577B8D; /* Change text color to #577B8D */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Flex column layout */
+  align-items: center; /* Center align all child elements */
+  position: relative; /* Ensure relative positioning context */
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#todo-container {
+  display: flex;
+  flex-direction: column; /* Flex column layout */
+  flex-grow: 1; /* Allow the container to grow and take available space */
+  width: 100%; /* Full width of the body */
+  overflow-y: auto; /* Scroll if content overflows */
+  padding: 10px;
+  box-sizing: border-box; /* Ensure padding does not affect the width */
+}
+
+#new-task {
+  width: 100%; /* Full width of the container */
+  padding: 10px; /* Add padding inside the input field */
+  margin-bottom: 10px;
+  border-radius: 10px; /* Add rounded corners to the input field */
+  border: 1px solid #ccc;
+  background-color: #222831; /* Dark background for the input field */
+  color: #577B8D; /* Change text color to #577B8D */
+  box-sizing: border-box; /* Ensure padding does not affect the width */
+}
+
+button {
+  border-radius: 5px; /* Add rounded corners */
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  background-color: #141922; /* Dark background for the buttons */
+  color: #577B8D; /* Change text color to #577B8D */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer; /* Add pointer cursor to buttons */
+}
+
+#task-list {
+  width: 100%; /* Full width of the container */
+}
+
+#task-list .task-item {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px; /* Add rounded corners to task items */
+  background-color: #222831; /* Dark background for the task items */
+  color: #577B8D; /* Change text color to #577B8D */
+  display: flex;
+  justify-content: space-between; /* Ensure checkbox, text, and hide button are aligned properly */
+  align-items: center; /* Align items vertically */
+}
+
+.task-item.hidden {
+  display: none; /* Hide the task by removing it from the layout flow */
+}
+
+.task-item .action-buttons {
+  margin-left: auto; /* Push buttons to the right */
+}
+
+#toggle-show-hidden {
+  position: absolute;
+  bottom: 10px; /* Adjust distance from the bottom */
+  left: 10px; /* Adjust distance from the left */
+}
