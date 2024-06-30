@@ -74,5 +74,5 @@ button {
 #toggle-show-hidden {
   position: absolute;
   bottom: 10px; /* Adjust distance from the bottom */
-  left: 10px; /* Adjust distance from the left */
+  right: 10px; /* Adjust distance from the left */
 }
