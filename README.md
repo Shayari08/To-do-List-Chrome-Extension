@@ -6,7 +6,8 @@ A simple, distraction-free to-do list Chrome extension designed to reduce overwh
 
 ## ✨ Features
 
-- ✅ **Add, edit, and delete tasks**
+- ✅ Add, edit, and delete tasks
+- 🔃 Drag-and-drop task reordering via [Sortable.js](https://sortablejs.github.io/Sortable/)
 - 🕶️ **Hide/show tasks** to limit visible items and avoid cognitive overload
 - 📦 **Archive completed tasks**, automatically grouped by date
 - 💾 **Persistent storage** via `localStorage` and Chrome Extension Storage API
