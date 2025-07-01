@@ -45,10 +45,6 @@ This project was born out of a personal need: on busy days, seeing a long list o
 
 <!-- Screenshots/GIFs will be added after UI polish -->
 
-## 📄 License
-
-This project currently has no license. Feel free to fork for personal use. (Add [MIT License](https://choosealicense.com/licenses/mit/) if you’d like to open-source it.)
-
 ---
 
 ### 🤝 Contributions
