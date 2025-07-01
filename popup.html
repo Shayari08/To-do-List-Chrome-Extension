@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+  <script defer src="popup.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+
+</head>
+<body class="w-80 p-4 bg-white">
+  <h1 class="text-xl font-bold mb-4">📝 Todo List</h1>
+
+  <!-- Task Input and Add Button -->
+  <div class="flex mb-2 space-x-2">
+    <input id="taskInput" type="text" placeholder="Add a new task" class="flex-1 px-2 py-1 border rounded" />
+    <button id="addTask" class="bg-blue-500 text-white px-3 py-1 rounded">Add</button>
+  </div>
+
+  <!-- Task List -->
+  <ul id="taskList" class="space-y-2"></ul>
+
+  <!-- Bulk Archive Button -->
+  <button id="bulkArchive" class="bg-purple-600 text-white px-2 py-1 rounded text-sm mt-4 w-full">
+    📦 Archive Completed Tasks
+  </button>
+
+  <!-- Show Hidden Tasks Button -->
+  <button id="showHidden" class="bg-gray-700 text-white px-2 py-1 rounded text-sm mt-4 w-full">
+    👻 Show Hidden Tasks
+  </button>
+
+  <!-- Link to Archive Page -->
+  <a href="archive.html" target="_blank" class="block text-center mt-2 text-blue-500 hover:underline text-sm">
+    📁 View Archive
+  </a>
+</body>
+</html>
